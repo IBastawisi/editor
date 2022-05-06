@@ -21,11 +21,42 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Editor</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <div id="counts" style="display: none;">
+      <details>
+        <summary>Counts</summary>
+        <dl>
+          <dt>Sections:</dt>
+          <dd id="count-sec"></dd>
+          <dt>Figures:</dt>
+          <dd id="count-fig"></dd>
+          <dt>Equations:</dt>
+          <dd id="count-eq"></dd>
+          <dt>Code Blocks:</dt>
+          <dd id="count-code"></dd>
+          <dt>Tables:</dt>
+          <dd id="count-table"></dd>
+          <dt>Words:</dt>
+          <dd id="count-words"></dd>
+          <dt>Characters:</dt>
+          <dd id="count-char"></dd>
+        </dl>
+      </details>
+    </div>
+    <article style="display: none;">
+      <h2>MyST</h2>
+      <pre id="myst"></pre>
+      <h2>LaTeX</h2>
+      <pre id="tex"></pre>
+      <h2>Plain Text</h2>
+      <pre id="text"></pre>
+      <h2>HTML</h2>
+      <pre id="html"></pre>
+    </article>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

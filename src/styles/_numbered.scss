@@ -1,0 +1,23 @@
+article {
+  counter-reset: eq_cnt fig_cnt table_cnt code_cnt footnote;
+}
+h1[numbered]:before,
+h2[numbered]:before,
+h3[numbered]:before,
+h4[numbered]:before,
+h5[numbered]:before,
+h6[numbered]:before {
+  content: attr(data-section) '.\0000a0\0000a0';
+}
+
+.eqn.display[numbered] {
+  counter-increment: eq_cnt;
+  padding-right: 30px;
+  position: relative;
+}
+.eqn.display[numbered]:before {
+  content: '(' counter(eq_cnt) ')';
+  position: absolute;
+  top: calc(50% - 0.6em);
+  right: 5px;
+}

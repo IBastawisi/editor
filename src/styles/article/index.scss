@@ -1,0 +1,19 @@
+@use 'article';
+@use 'aside';
+@use 'callout';
+@use 'components';
+@use 'equation';
+@use 'quote';
+@use 'citation';
+
+article {
+  position: relative;
+}
+
+.compact {
+  p {
+    font-size: 15px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+}
